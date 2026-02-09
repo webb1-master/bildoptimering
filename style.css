@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+body {
+    display: grid;
+    justify-items: center;
+    background-color: gray;
+}
+main {
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    grid-template-areas: 
+        "img2 img2"
+        "intro intro"
+        "img1 img1"
+        "story story"
+        "img3 img3"
+        "img4 img5";
+}
+
+.intro {
+    grid-area: intro;
+    padding: 10px;
+}
+  .story {
+    grid-area: story;
+    padding: 10px;
+}
+.img-1 {
+    grid-area: img1;
+}
+.img-2 {
+    grid-area: img2;
+}
+.img-3 {
+    grid-area: img3;
+}
+.img-4 {
+    grid-area: img4;
+}
+.img-5 {
+    grid-area: img5;
+}
